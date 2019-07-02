@@ -25,10 +25,6 @@ DEPEND="${RDEPEND}
 		app-text/docbook-xsl-stylesheets
 	)"
 
-PATCHES=(
-	"${FILESDIR}/3.9.4-configure.patch"
-)
-
 src_prepare() {
 	default
 	eautoreconf
