@@ -39,7 +39,7 @@ src_prepare() {
 	default
 	sed -i -e "s/ -ggdb//g" configure.ac || die
 	eautoreconf
-	python_fix_shebang .
+	python_fix_shebang . || true
 }
 
 src_configure() {
